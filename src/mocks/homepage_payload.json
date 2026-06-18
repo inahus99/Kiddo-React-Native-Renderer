@@ -30,8 +30,13 @@
       "ctaLabel": "Shop Now",
       "action": {
         "type": "DEEP_LINK",
-        "payload": { "url": "/category/featured" }
-      }
+        "payload": {
+          "url": "/category/featured"
+        }
+      },
+      "variant": "hero",
+      "badgeLabel": "10 min delivery",
+      "accentColor": "#FF6B35"
     },
     {
       "id": "block_collection_summer",
@@ -44,35 +49,60 @@
           "title": "Sunscreen & Skincare",
           "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=200&q=80",
           "subtitle": "From ₹199",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/category/sunscreen" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/category/sunscreen"
+            }
+          }
         },
         {
           "id": "col_sum_002",
           "title": "Pool Floats & Toys",
           "imageUrl": "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=200&q=80",
           "subtitle": "From ₹299",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/category/pool-toys" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/category/pool-toys"
+            }
+          }
         },
         {
           "id": "col_sum_003",
           "title": "Cooling Towels",
           "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=200&q=80",
           "subtitle": "₹99 onwards",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/category/cooling" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/category/cooling"
+            }
+          }
         },
         {
           "id": "col_sum_004",
           "title": "Hydration Bottles",
           "imageUrl": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=200&q=80",
           "subtitle": "From ₹249",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/category/bottles" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/category/bottles"
+            }
+          }
         },
         {
           "id": "col_sum_005",
           "title": "Summer Hats",
           "imageUrl": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=200&q=80",
           "subtitle": "₹149 onwards",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/category/hats" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/category/hats"
+            }
+          }
         }
       ]
     },
@@ -93,7 +123,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_001", "name": "Himalaya Baby Lotion 400ml", "price": 179, "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&q=80" }
+            "payload": {
+              "id": "prod_001",
+              "name": "Himalaya Baby Lotion 400ml",
+              "price": 179,
+              "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&q=80"
+            }
           }
         },
         {
@@ -108,7 +143,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_002", "name": "MamaEarth Organic Face Wash", "price": 249, "imageUrl": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=300&q=80" }
+            "payload": {
+              "id": "prod_002",
+              "name": "MamaEarth Organic Face Wash",
+              "price": 249,
+              "imageUrl": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=300&q=80"
+            }
           }
         },
         {
@@ -122,7 +162,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_003", "name": "Johnson's Baby Powder 200g", "price": 145, "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=300&q=80" }
+            "payload": {
+              "id": "prod_003",
+              "name": "Johnson's Baby Powder 200g",
+              "price": 145,
+              "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=300&q=80"
+            }
           }
         },
         {
@@ -137,7 +182,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_004", "name": "Pigeon Feeding Bottle Set", "price": 599, "imageUrl": "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=300&q=80" }
+            "payload": {
+              "id": "prod_004",
+              "name": "Pigeon Feeding Bottle Set",
+              "price": 599,
+              "imageUrl": "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=300&q=80"
+            }
           }
         }
       ]
@@ -151,8 +201,13 @@
       "ctaLabel": "Explore",
       "action": {
         "type": "DEEP_LINK",
-        "payload": { "url": "/category/snacks-under-99" }
-      }
+        "payload": {
+          "url": "/category/snacks-under-99"
+        }
+      },
+      "variant": "offer",
+      "badgeLabel": "Under ₹99",
+      "accentColor": "#06D6A0"
     },
     {
       "id": "block_collection_snacks",
@@ -165,28 +220,60 @@
           "title": "Makhana Puffs",
           "imageUrl": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200&q=80",
           "subtitle": "₹49",
-          "action": { "type": "ADD_TO_CART", "payload": { "id": "snk_001", "name": "Makhana Puffs", "price": 49, "imageUrl": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200&q=80" } }
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snk_001",
+              "name": "Makhana Puffs",
+              "price": 49,
+              "imageUrl": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200&q=80"
+            }
+          }
         },
         {
           "id": "col_snk_002",
           "title": "Ragi Biscuits",
           "imageUrl": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=200&q=80",
           "subtitle": "₹79",
-          "action": { "type": "ADD_TO_CART", "payload": { "id": "snk_002", "name": "Ragi Biscuits", "price": 79, "imageUrl": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=200&q=80" } }
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snk_002",
+              "name": "Ragi Biscuits",
+              "price": 79,
+              "imageUrl": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=200&q=80"
+            }
+          }
         },
         {
           "id": "col_snk_003",
           "title": "Fruit Gummies",
           "imageUrl": "https://images.unsplash.com/photo-1582499631700-87b2c1af7d11?w=200&q=80",
           "subtitle": "₹59",
-          "action": { "type": "ADD_TO_CART", "payload": { "id": "snk_003", "name": "Fruit Gummies", "price": 59, "imageUrl": "https://images.unsplash.com/photo-1582499631700-87b2c1af7d11?w=200&q=80" } }
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snk_003",
+              "name": "Fruit Gummies",
+              "price": 59,
+              "imageUrl": "https://images.unsplash.com/photo-1582499631700-87b2c1af7d11?w=200&q=80"
+            }
+          }
         },
         {
           "id": "col_snk_004",
           "title": "Cheese Crackers",
           "imageUrl": "https://images.unsplash.com/photo-1506280754576-f6fa8a873550?w=200&q=80",
           "subtitle": "₹89",
-          "action": { "type": "ADD_TO_CART", "payload": { "id": "snk_004", "name": "Cheese Crackers", "price": 89, "imageUrl": "https://images.unsplash.com/photo-1506280754576-f6fa8a873550?w=200&q=80" } }
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snk_004",
+              "name": "Cheese Crackers",
+              "price": 89,
+              "imageUrl": "https://images.unsplash.com/photo-1506280754576-f6fa8a873550?w=200&q=80"
+            }
+          }
         }
       ]
     },
@@ -207,7 +294,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_005", "name": "Pampers Premium Care S", "price": 699, "imageUrl": "https://images.unsplash.com/photo-1591438776975-9d1b76a3c1e3?w=300&q=80" }
+            "payload": {
+              "id": "prod_005",
+              "name": "Pampers Premium Care S",
+              "price": 699,
+              "imageUrl": "https://images.unsplash.com/photo-1591438776975-9d1b76a3c1e3?w=300&q=80"
+            }
           }
         },
         {
@@ -221,7 +313,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_006", "name": "Huggies Wonder Pants M", "price": 749, "imageUrl": "https://images.unsplash.com/photo-1506268452-6d35ef9d0dfb?w=300&q=80" }
+            "payload": {
+              "id": "prod_006",
+              "name": "Huggies Wonder Pants M",
+              "price": 749,
+              "imageUrl": "https://images.unsplash.com/photo-1506268452-6d35ef9d0dfb?w=300&q=80"
+            }
           }
         },
         {
@@ -236,7 +333,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_007", "name": "WaterWipes Sensitive", "price": 399, "imageUrl": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=300&q=80" }
+            "payload": {
+              "id": "prod_007",
+              "name": "WaterWipes Sensitive",
+              "price": 399,
+              "imageUrl": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=300&q=80"
+            }
           }
         },
         {
@@ -250,7 +352,12 @@
           "inStock": false,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_008", "name": "Mee Mee Rash Cream", "price": 189, "imageUrl": "https://images.unsplash.com/photo-1617897903246-719242758050?w=300&q=80" }
+            "payload": {
+              "id": "prod_008",
+              "name": "Mee Mee Rash Cream",
+              "price": 189,
+              "imageUrl": "https://images.unsplash.com/photo-1617897903246-719242758050?w=300&q=80"
+            }
           }
         }
       ]
@@ -266,35 +373,60 @@
           "title": "Lunchboxes & Bags",
           "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=200&q=80",
           "subtitle": "From ₹299",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/category/lunchboxes" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/category/lunchboxes"
+            }
+          }
         },
         {
           "id": "col_sch_002",
           "title": "Pencil Cases",
           "imageUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=200&q=80",
           "subtitle": "₹99 onwards",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/category/stationery" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/category/stationery"
+            }
+          }
         },
         {
           "id": "col_sch_003",
           "title": "School Bags",
           "imageUrl": "https://images.unsplash.com/photo-1581890855879-0dfb10c2e8e8?w=200&q=80",
           "subtitle": "From ₹499",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/category/bags" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/category/bags"
+            }
+          }
         },
         {
           "id": "col_sch_004",
           "title": "Water Bottles",
           "imageUrl": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=200&q=80",
           "subtitle": "₹149 onwards",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/category/water-bottles" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/category/water-bottles"
+            }
+          }
         },
         {
           "id": "col_sch_005",
           "title": "Art Supplies",
           "imageUrl": "https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?w=200&q=80",
           "subtitle": "From ₹199",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/category/art" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/category/art"
+            }
+          }
         }
       ]
     },
@@ -320,7 +452,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_009", "name": "LeapFrog Learning Tablet", "price": 1299, "imageUrl": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=300&q=80" }
+            "payload": {
+              "id": "prod_009",
+              "name": "LeapFrog Learning Tablet",
+              "price": 1299,
+              "imageUrl": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=300&q=80"
+            }
           }
         },
         {
@@ -335,7 +472,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_010", "name": "Wooden Building Blocks", "price": 849, "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=300&q=80" }
+            "payload": {
+              "id": "prod_010",
+              "name": "Wooden Building Blocks",
+              "price": 849,
+              "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=300&q=80"
+            }
           }
         },
         {
@@ -349,7 +491,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_011", "name": "Lego Classic Medium Box", "price": 2499, "imageUrl": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=300&q=80" }
+            "payload": {
+              "id": "prod_011",
+              "name": "Lego Classic Medium Box",
+              "price": 2499,
+              "imageUrl": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=300&q=80"
+            }
           }
         },
         {
@@ -364,7 +511,12 @@
           "inStock": true,
           "action": {
             "type": "ADD_TO_CART",
-            "payload": { "id": "prod_012", "name": "Play-Doh 10-Colour Set", "price": 449, "imageUrl": "https://images.unsplash.com/photo-1606143132679-2c1f5c1e8e80?w=300&q=80" }
+            "payload": {
+              "id": "prod_012",
+              "name": "Play-Doh 10-Colour Set",
+              "price": 449,
+              "imageUrl": "https://images.unsplash.com/photo-1606143132679-2c1f5c1e8e80?w=300&q=80"
+            }
           }
         }
       ]
@@ -378,8 +530,14 @@
       "ctaLabel": "Claim Gift",
       "action": {
         "type": "APPLY_MYSTERY_GIFT_COUPON",
-        "payload": { "couponCode": "CARNIVAL2024", "productId": "mystery_001" }
-      }
+        "payload": {
+          "couponCode": "CARNIVAL2024",
+          "productId": "mystery_001"
+        }
+      },
+      "variant": "campaign",
+      "badgeLabel": "🔴 LIVE",
+      "accentColor": "#FFD166"
     },
     {
       "id": "block_collection_carnival",
@@ -392,28 +550,49 @@
           "title": "Mystery Gift Box",
           "imageUrl": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=200&q=80",
           "subtitle": "Spin to reveal!",
-          "action": { "type": "APPLY_MYSTERY_GIFT_COUPON", "payload": { "couponCode": "CARNIVAL2024", "productId": "mystery_001" } }
+          "action": {
+            "type": "APPLY_MYSTERY_GIFT_COUPON",
+            "payload": {
+              "couponCode": "CARNIVAL2024",
+              "productId": "mystery_001"
+            }
+          }
         },
         {
           "id": "col_car_002",
           "title": "Surprise Toys",
           "imageUrl": "https://images.unsplash.com/photo-1558877385-81a1c7e67d72?w=200&q=80",
           "subtitle": "₹199 onwards",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/campaign/carnival/surprise-toys" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/campaign/carnival/surprise-toys"
+            }
+          }
         },
         {
           "id": "col_car_003",
           "title": "Gift Hampers",
           "imageUrl": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=200&q=80",
           "subtitle": "From ₹999",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/campaign/carnival/hampers" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/campaign/carnival/hampers"
+            }
+          }
         },
         {
           "id": "col_car_004",
           "title": "Carnival Sweets",
           "imageUrl": "https://images.unsplash.com/photo-1560624052-449f5ddf0c31?w=200&q=80",
           "subtitle": "₹79 onwards",
-          "action": { "type": "DEEP_LINK", "payload": { "url": "/campaign/carnival/sweets" } }
+          "action": {
+            "type": "DEEP_LINK",
+            "payload": {
+              "url": "/campaign/carnival/sweets"
+            }
+          }
         }
       ]
     }

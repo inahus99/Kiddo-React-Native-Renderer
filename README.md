@@ -163,9 +163,13 @@ src/
 
 ```bash
 # Install dependencies
-npm install
+npm install --legacy-peer-deps
 
-# Start the Expo development server
+# Run in browser (web)
+npm run web
+# then open http://localhost:8081
+
+# Start the Expo development server (QR code for Expo Go)
 npm start
 
 # Run on Android
@@ -174,6 +178,8 @@ npm run android
 # Run on iOS (macOS required)
 npm run ios
 ```
+
+> **Node / npm version:** Tested with Node 20 LTS. React is pinned to `19.0.0` — both `react` and `react-dom` must be the exact same version; the lock file enforces this.
 
 > **Switching campaigns:** In `App.tsx`, replace `homepagePayload` with any of the three campaign profiles from `src/campaigns/` to instantly see the full theme skin and overlay change — no app restart needed in development.
 

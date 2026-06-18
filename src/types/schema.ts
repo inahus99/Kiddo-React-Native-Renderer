@@ -33,6 +33,9 @@ export type BannerHeroBlock = {
   title?: string;
   subtitle?: string;
   ctaLabel?: string;
+  variant?: 'hero' | 'offer' | 'campaign';
+  badgeLabel?: string;
+  accentColor?: string;
   action: ActionSchema;
 };
 
