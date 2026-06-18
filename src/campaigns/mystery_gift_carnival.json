@@ -1,0 +1,19 @@
+{
+  "id": "mystery_gift_carnival",
+  "name": "Mystery Gift Carnival",
+  "theme": {
+    "primary": "#C62828",
+    "secondary": "#FF8F00",
+    "background": "#FFF3E0",
+    "surface": "#FFFFFF",
+    "text": "#1A0A0A",
+    "textSecondary": "#795548",
+    "accent": "#FF8F00",
+    "border": "#FFCCBC"
+  },
+  "overlay": {
+    "type": "FULL_SCREEN_OVERLAY",
+    "animation_url": "https://assets.lottiefiles.com/packages/lf20_xyadoh9h.json",
+    "duration_ms": 4000
+  }
+}

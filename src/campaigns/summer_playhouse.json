@@ -1,0 +1,19 @@
+{
+  "id": "summer_playhouse",
+  "name": "Summer Playhouse Festival",
+  "theme": {
+    "primary": "#0288D1",
+    "secondary": "#4DD0E1",
+    "background": "#E0F7FA",
+    "surface": "#FFFFFF",
+    "text": "#01579B",
+    "textSecondary": "#4FC3F7",
+    "accent": "#80DEEA",
+    "border": "#B2EBF2"
+  },
+  "overlay": {
+    "type": "FULL_SCREEN_OVERLAY",
+    "animation_url": "https://assets.lottiefiles.com/packages/lf20_1cazwtnj.json",
+    "duration_ms": 5000
+  }
+}

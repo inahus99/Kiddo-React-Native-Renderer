@@ -1,0 +1,19 @@
+{
+  "id": "back_to_school",
+  "name": "Back to School Mega-Sale",
+  "theme": {
+    "primary": "#1565C0",
+    "secondary": "#FDD835",
+    "background": "#E3F2FD",
+    "surface": "#FFFFFF",
+    "text": "#0D1B2A",
+    "textSecondary": "#546E7A",
+    "accent": "#FDD835",
+    "border": "#BBDEFB"
+  },
+  "overlay": {
+    "type": "FULL_SCREEN_OVERLAY",
+    "animation_url": "https://assets.lottiefiles.com/packages/lf20_jbb8snxl.json",
+    "duration_ms": 3500
+  }
+}
