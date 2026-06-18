@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback, useMemo, Component } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import type { HomepagePayload, BlockNode } from '@/types';
 import { registerBlock } from '@/registry';
@@ -14,6 +14,26 @@ import { CampaignBanner } from '@/components/overlays/CampaignBanner';
 registerBlock('BANNER_HERO', BannerHero);
 registerBlock('PRODUCT_GRID_2X2', ProductGrid2x2);
 registerBlock('DYNAMIC_COLLECTION', DynamicCollection);
+
+class AppErrorBoundary extends Component<
+  { children: React.ReactNode },
+  { error: string | null }
+> {
+  state = { error: null };
+  static getDerivedStateFromError(e: Error) { return { error: e.message }; }
+  render() {
+    if (this.state.error) {
+      return (
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding: 24 }}>
+          <Text style={{ color: '#C62828', fontSize: 14 }}>
+            Render error: {this.state.error}
+          </Text>
+        </View>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 type Props = {
   payload: HomepagePayload;
@@ -33,31 +53,33 @@ export function HomeFeed({ payload }: Props) {
   }, [payload.campaign]);
 
   return (
-    <View style={[styles.root, { backgroundColor: theme.background }]}>
-      <View style={[styles.header, { backgroundColor: theme.surface, borderBottomColor: theme.border }]}>
-        <Text style={[styles.logoText, { color: theme.primary }]}>kiddo</Text>
-        <TouchableOpacity style={styles.cartButton} accessibilityRole="button" accessibilityLabel="Cart">
-          <Text style={styles.cartIcon}>🛒</Text>
-          {cartTotal > 0 && (
-            <View style={[styles.cartBadge, { backgroundColor: theme.primary }]}>
-              <Text style={styles.cartBadgeText}>{cartTotal > 99 ? '99+' : cartTotal}</Text>
-            </View>
-          )}
-        </TouchableOpacity>
+    <AppErrorBoundary>
+      <View style={[styles.root, { backgroundColor: theme.background }]}>
+        <View style={[styles.header, { backgroundColor: theme.surface, borderBottomColor: theme.border }]}>
+          <Text style={[styles.logoText, { color: theme.primary }]}>kiddo</Text>
+          <TouchableOpacity style={styles.cartButton} accessibilityRole="button" accessibilityLabel="Cart">
+            <Text style={styles.cartIcon}>🛒</Text>
+            {cartTotal > 0 && (
+              <View style={[styles.cartBadge, { backgroundColor: theme.primary }]}>
+                <Text style={styles.cartBadgeText}>{cartTotal > 99 ? '99+' : cartTotal}</Text>
+              </View>
+            )}
+          </TouchableOpacity>
+        </View>
+
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ paddingBottom: 40, backgroundColor: theme.background }}
+        >
+          {listHeader}
+          {payload.blocks.map(renderBlock)}
+        </ScrollView>
+
+        {payload.campaign?.overlay ? (
+          <FullScreenOverlay overlay={payload.campaign.overlay} />
+        ) : null}
       </View>
-
-      <ScrollView
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: 40, backgroundColor: theme.background }}
-      >
-        {listHeader}
-        {payload.blocks.map(renderBlock)}
-      </ScrollView>
-
-      {payload.campaign?.overlay ? (
-        <FullScreenOverlay overlay={payload.campaign.overlay} />
-      ) : null}
-    </View>
+    </AppErrorBoundary>
   );
 }
 
