@@ -1,11 +1,7 @@
 const { getDefaultConfig } = require('expo/metro-config');
-const path = require('path');
 
+// Expo SDK 50+ reads tsconfig.json path aliases automatically.
+// No custom resolver.alias needed — the default config handles @/* → src/*.
 const config = getDefaultConfig(__dirname);
-
-// Resolve @/* path aliases defined in tsconfig.json
-config.resolver.alias = {
-  '@': path.resolve(__dirname, 'src'),
-};
 
 module.exports = config;
