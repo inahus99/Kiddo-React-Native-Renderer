@@ -1,6 +1,6 @@
 {
-  "id": "mystery_gift_carnival",
-  "name": "Mystery Gift Carnival",
+  "version": "1.0.0",
+  "requestId": "req_mgc_001",
   "theme": {
     "primary": "#C62828",
     "secondary": "#FF8F00",
@@ -11,9 +11,135 @@
     "accent": "#FF8F00",
     "border": "#FFCCBC"
   },
-  "overlay": {
-    "type": "FULL_SCREEN_OVERLAY",
-    "animation_url": "https://assets.lottiefiles.com/packages/lf20_xyadoh9h.json",
-    "duration_ms": 4000
-  }
+  "campaign": {
+    "id": "mystery_gift_carnival",
+    "name": "Mystery Gift Carnival",
+    "overlay": {
+      "type": "FULL_SCREEN_OVERLAY",
+      "animation_url": "https://assets.lottiefiles.com/packages/lf20_xyadoh9h.json",
+      "duration_ms": 4000
+    }
+  },
+  "blocks": [
+    {
+      "id": "mgc_banner_001",
+      "type": "BANNER_HERO",
+      "imageUrl": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&q=80",
+      "title": "Mystery Gift Carnival",
+      "subtitle": "Spin and win gifts for your kids!",
+      "ctaLabel": "Claim Gift",
+      "variant": "campaign",
+      "badgeLabel": "🔴 LIVE",
+      "accentColor": "#FF8F00",
+      "action": { "type": "APPLY_MYSTERY_GIFT_COUPON", "payload": { "couponCode": "CARNIVAL2024", "productId": "mgc_gift_001" } }
+    },
+    {
+      "id": "mgc_collection_carnival",
+      "type": "DYNAMIC_COLLECTION",
+      "sectionTitle": "Carnival Picks — Tap to Win!",
+      "themeTag": "mystery_gift_carnival",
+      "items": [
+        {
+          "id": "cp_001",
+          "title": "Mystery Toy Box",
+          "imageUrl": "https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=200&q=80",
+          "subtitle": "Surprise inside!",
+          "action": { "type": "APPLY_MYSTERY_GIFT_COUPON", "payload": { "couponCode": "MYSTBOX01", "productId": "cp_001" } }
+        },
+        {
+          "id": "cp_002",
+          "title": "Carnival Candy Pack",
+          "imageUrl": "https://images.unsplash.com/photo-1560624052-449f5ddf0c31?w=200&q=80",
+          "subtitle": "₹79 onwards",
+          "action": { "type": "APPLY_MYSTERY_GIFT_COUPON", "payload": { "couponCode": "CANDY2024", "productId": "cp_002" } }
+        },
+        {
+          "id": "cp_003",
+          "title": "Gold Prize Hamper",
+          "imageUrl": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=200&q=80",
+          "subtitle": "Worth ₹2999",
+          "action": { "type": "APPLY_MYSTERY_GIFT_COUPON", "payload": { "couponCode": "GOLDPRIZE", "productId": "cp_003" } }
+        },
+        {
+          "id": "cp_004",
+          "title": "Balloon Art Kit",
+          "imageUrl": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=200&q=80",
+          "subtitle": "₹199",
+          "action": { "type": "APPLY_MYSTERY_GIFT_COUPON", "payload": { "couponCode": "BALLOON01", "productId": "cp_004" } }
+        },
+        {
+          "id": "cp_005",
+          "title": "Magic Trick Set",
+          "imageUrl": "https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=200&q=80",
+          "subtitle": "₹349",
+          "action": { "type": "APPLY_MYSTERY_GIFT_COUPON", "payload": { "couponCode": "MAGIC2024", "productId": "cp_005" } }
+        }
+      ]
+    },
+    {
+      "id": "mgc_grid_gifts",
+      "type": "PRODUCT_GRID_2X2",
+      "sectionTitle": "Top Carnival Deals",
+      "items": [
+        {
+          "id": "mgc_001",
+          "name": "Remote Control Car",
+          "brand": "ZipZap",
+          "price": 799,
+          "originalPrice": 1299,
+          "discountPercent": 38,
+          "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=300&q=80",
+          "badgeLabel": "🎁 Mystery Pick",
+          "inStock": true,
+          "action": { "type": "APPLY_MYSTERY_GIFT_COUPON", "payload": { "couponCode": "RCCAR2024", "productId": "mgc_001" } }
+        },
+        {
+          "id": "mgc_002",
+          "name": "Bubble Machine",
+          "brand": "FunBubble",
+          "price": 499,
+          "originalPrice": 799,
+          "discountPercent": 38,
+          "imageUrl": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=300&q=80",
+          "badgeLabel": "Carnival Special",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "mgc_002", "name": "Bubble Machine", "price": 499, "imageUrl": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=300&q=80" } }
+        },
+        {
+          "id": "mgc_003",
+          "name": "Glow Stick Bundle",
+          "brand": "NeonKids",
+          "price": 149,
+          "originalPrice": 249,
+          "discountPercent": 40,
+          "imageUrl": "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?w=300&q=80",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "mgc_003", "name": "Glow Stick Bundle", "price": 149, "imageUrl": "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?w=300&q=80" } }
+        },
+        {
+          "id": "mgc_004",
+          "name": "Carnival Costume Set",
+          "brand": "DressUp",
+          "price": 599,
+          "originalPrice": 999,
+          "discountPercent": 40,
+          "imageUrl": "https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=300&q=80",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "mgc_004", "name": "Carnival Costume Set", "price": 599, "imageUrl": "https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=300&q=80" } }
+        }
+      ]
+    },
+    {
+      "id": "mgc_banner_002",
+      "type": "BANNER_HERO",
+      "imageUrl": "https://images.unsplash.com/photo-1464349153735-7db50ed83c84?w=800&q=80",
+      "title": "Sweets & Snacks Carnival",
+      "subtitle": "Treats your kids will love",
+      "ctaLabel": "Grab Sweets",
+      "variant": "offer",
+      "badgeLabel": "50% OFF",
+      "accentColor": "#C62828",
+      "action": { "type": "DEEP_LINK", "payload": { "url": "/campaign/carnival/sweets" } }
+    }
+  ]
 }

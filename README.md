@@ -181,7 +181,17 @@ npm run ios
 
 > **Node / npm version:** Tested with Node 20 LTS. React is pinned to `19.0.0` — both `react` and `react-dom` must be the exact same version; the lock file enforces this.
 
-> **Switching campaigns:** In `App.tsx`, replace `homepagePayload` with any of the three campaign profiles from `src/campaigns/` to instantly see the full theme skin and overlay change — no app restart needed in development.
+> **Switching campaigns:** In `App.tsx`, swap the import line to any of the three full campaign payloads:
+> ```ts
+> // Active campaign (default)
+> import homepagePayload from '@/mocks/homepage_payload.json';        // Mystery Gift Carnival
+>
+> // Switch to other campaigns:
+> import homepagePayload from '@/campaigns/back_to_school.json';      // yellow+blue, Lunchboxes & Bags
+> import homepagePayload from '@/campaigns/summer_playhouse.json';    // ocean blue, Petting Zoo Tickets
+> import homepagePayload from '@/campaigns/mystery_gift_carnival.json'; // carnival red, confetti overlay
+> ```
+> Each file is a complete `HomepagePayload` — theme, overlay, and campaign-specific blocks all change instantly.
 
 ---
 

@@ -1,19 +1,174 @@
 {
-  "id": "summer_playhouse",
-  "name": "Summer Playhouse Festival",
+  "version": "1.0.0",
+  "requestId": "req_sp_001",
   "theme": {
     "primary": "#0288D1",
     "secondary": "#4DD0E1",
     "background": "#E0F7FA",
     "surface": "#FFFFFF",
     "text": "#01579B",
-    "textSecondary": "#4FC3F7",
+    "textSecondary": "#0277BD",
     "accent": "#80DEEA",
     "border": "#B2EBF2"
   },
-  "overlay": {
-    "type": "FULL_SCREEN_OVERLAY",
-    "animation_url": "https://assets.lottiefiles.com/packages/lf20_1cazwtnj.json",
-    "duration_ms": 5000
-  }
+  "campaign": {
+    "id": "summer_playhouse",
+    "name": "Summer Playhouse Festival",
+    "overlay": {
+      "type": "FULL_SCREEN_OVERLAY",
+      "animation_url": "https://assets.lottiefiles.com/packages/lf20_1cazwtnj.json",
+      "duration_ms": 5000
+    }
+  },
+  "blocks": [
+    {
+      "id": "sp_banner_001",
+      "type": "BANNER_HERO",
+      "imageUrl": "https://images.unsplash.com/photo-1526634332515-d56c5fd16991?w=800&q=80",
+      "title": "Summer Playhouse Festival",
+      "subtitle": "Fun-packed outdoor experiences for kids",
+      "ctaLabel": "Explore Events",
+      "variant": "campaign",
+      "badgeLabel": "🌊 Live Now",
+      "accentColor": "#4DD0E1",
+      "action": { "type": "DEEP_LINK", "payload": { "url": "/campaign/summer-playhouse" } }
+    },
+    {
+      "id": "sp_collection_petting_zoo",
+      "type": "DYNAMIC_COLLECTION",
+      "sectionTitle": "Petting Zoo Tickets",
+      "themeTag": "summer_playhouse",
+      "items": [
+        {
+          "id": "pz_001",
+          "title": "Weekend Farm Visit",
+          "imageUrl": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=200&q=80",
+          "subtitle": "₹349 / child",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/event/farm-visit-weekend" } }
+        },
+        {
+          "id": "pz_002",
+          "title": "Bunny Cuddle Session",
+          "imageUrl": "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=200&q=80",
+          "subtitle": "₹199 / child",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/event/bunny-cuddle" } }
+        },
+        {
+          "id": "pz_003",
+          "title": "Pony Ride Experience",
+          "imageUrl": "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=200&q=80",
+          "subtitle": "₹499 / child",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/event/pony-ride" } }
+        },
+        {
+          "id": "pz_004",
+          "title": "Duck Feeding Trail",
+          "imageUrl": "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=200&q=80",
+          "subtitle": "₹149 / child",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/event/duck-feeding" } }
+        },
+        {
+          "id": "pz_005",
+          "title": "Full Day Farm Package",
+          "imageUrl": "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=200&q=80",
+          "subtitle": "₹799 / family",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/event/full-day-farm" } }
+        }
+      ]
+    },
+    {
+      "id": "sp_grid_outdoor",
+      "type": "PRODUCT_GRID_2X2",
+      "sectionTitle": "Outdoor Play Essentials",
+      "items": [
+        {
+          "id": "op_001",
+          "name": "Beach Ball Set",
+          "brand": "FunPlay",
+          "price": 299,
+          "originalPrice": 399,
+          "discountPercent": 25,
+          "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "badgeLabel": "Summer Pick",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "op_001", "name": "Beach Ball Set", "price": 299, "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80" } }
+        },
+        {
+          "id": "op_002",
+          "name": "Splash Water Guns",
+          "brand": "AquaKids",
+          "price": 349,
+          "originalPrice": 499,
+          "discountPercent": 30,
+          "imageUrl": "https://images.unsplash.com/photo-1575783970733-1aaedde1db74?w=300&q=80",
+          "badgeLabel": "30% OFF",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "op_002", "name": "Splash Water Guns", "price": 349, "imageUrl": "https://images.unsplash.com/photo-1575783970733-1aaedde1db74?w=300&q=80" } }
+        },
+        {
+          "id": "op_003",
+          "name": "UV Protection Hat",
+          "brand": "SunSafe",
+          "price": 449,
+          "originalPrice": 599,
+          "discountPercent": 25,
+          "imageUrl": "https://images.unsplash.com/photo-1572307480813-ceb0e59d8325?w=300&q=80",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "op_003", "name": "UV Protection Hat", "price": 449, "imageUrl": "https://images.unsplash.com/photo-1572307480813-ceb0e59d8325?w=300&q=80" } }
+        },
+        {
+          "id": "op_004",
+          "name": "Kids Sunscreen SPF50",
+          "brand": "BabyShield",
+          "price": 249,
+          "originalPrice": 329,
+          "discountPercent": 24,
+          "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=300&q=80",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "op_004", "name": "Kids Sunscreen SPF50", "price": 249, "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=300&q=80" } }
+        }
+      ]
+    },
+    {
+      "id": "sp_banner_002",
+      "type": "BANNER_HERO",
+      "imageUrl": "https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=800&q=80",
+      "title": "Beat the Heat",
+      "subtitle": "Splash pools, water toys & cooling essentials",
+      "ctaLabel": "Shop Now",
+      "variant": "offer",
+      "badgeLabel": "Summer Sale",
+      "accentColor": "#0288D1",
+      "action": { "type": "DEEP_LINK", "payload": { "url": "/category/water-play" } }
+    },
+    {
+      "id": "sp_collection_swimwear",
+      "type": "DYNAMIC_COLLECTION",
+      "sectionTitle": "Summer Swimwear & Floaties",
+      "themeTag": "summer_playhouse",
+      "items": [
+        {
+          "id": "sw_001",
+          "title": "Shark Float Ring",
+          "imageUrl": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=200&q=80",
+          "subtitle": "₹499",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/shark-float" } }
+        },
+        {
+          "id": "sw_002",
+          "title": "Swim Vest 2-4 yrs",
+          "imageUrl": "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=200&q=80",
+          "subtitle": "₹799",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/swim-vest" } }
+        },
+        {
+          "id": "sw_003",
+          "title": "Mermaid Swimsuit",
+          "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&q=80",
+          "subtitle": "₹649",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/mermaid-swimsuit" } }
+        }
+      ]
+    }
+  ]
 }

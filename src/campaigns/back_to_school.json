@@ -1,6 +1,6 @@
 {
-  "id": "back_to_school",
-  "name": "Back to School Mega-Sale",
+  "version": "1.0.0",
+  "requestId": "req_bts_001",
   "theme": {
     "primary": "#1565C0",
     "secondary": "#FDD835",
@@ -11,9 +11,164 @@
     "accent": "#FDD835",
     "border": "#BBDEFB"
   },
-  "overlay": {
-    "type": "FULL_SCREEN_OVERLAY",
-    "animation_url": "https://assets.lottiefiles.com/packages/lf20_jbb8snxl.json",
-    "duration_ms": 3500
-  }
+  "campaign": {
+    "id": "back_to_school",
+    "name": "Back to School Mega-Sale",
+    "overlay": {
+      "type": "FULL_SCREEN_OVERLAY",
+      "animation_url": "https://assets.lottiefiles.com/packages/lf20_jbb8snxl.json",
+      "duration_ms": 3500
+    }
+  },
+  "blocks": [
+    {
+      "id": "bts_banner_001",
+      "type": "BANNER_HERO",
+      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+      "title": "Back to School Mega-Sale",
+      "subtitle": "Up to 50% off on school essentials",
+      "ctaLabel": "Shop Now",
+      "variant": "hero",
+      "badgeLabel": "Mega Sale",
+      "accentColor": "#1565C0",
+      "action": { "type": "DEEP_LINK", "payload": { "url": "/campaign/back-to-school" } }
+    },
+    {
+      "id": "bts_collection_lunchboxes",
+      "type": "DYNAMIC_COLLECTION",
+      "sectionTitle": "Lunchboxes & Bags",
+      "themeTag": "back_to_school",
+      "items": [
+        {
+          "id": "lb_001",
+          "title": "Dino Lunchbox",
+          "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=200&q=80",
+          "subtitle": "₹349",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/dino-lunchbox" } }
+        },
+        {
+          "id": "lb_002",
+          "title": "Superhero Backpack",
+          "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=200&q=80",
+          "subtitle": "₹699",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/superhero-bag" } }
+        },
+        {
+          "id": "lb_003",
+          "title": "Princess Tiffin",
+          "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=200&q=80",
+          "subtitle": "₹299",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/princess-tiffin" } }
+        },
+        {
+          "id": "lb_004",
+          "title": "Space Explorer Pack",
+          "imageUrl": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=200&q=80",
+          "subtitle": "₹899",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/space-pack" } }
+        },
+        {
+          "id": "lb_005",
+          "title": "Unicorn Water Bottle",
+          "imageUrl": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=200&q=80",
+          "subtitle": "₹199",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/unicorn-bottle" } }
+        }
+      ]
+    },
+    {
+      "id": "bts_grid_stationery",
+      "type": "PRODUCT_GRID_2X2",
+      "sectionTitle": "Stationery Must-Haves",
+      "items": [
+        {
+          "id": "st_001",
+          "name": "Color Pencil Set 24pc",
+          "brand": "Camlin",
+          "price": 149,
+          "originalPrice": 199,
+          "discountPercent": 25,
+          "imageUrl": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=300&q=80",
+          "badgeLabel": "25% OFF",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "st_001", "name": "Color Pencil Set 24pc", "price": 149, "imageUrl": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=300&q=80" } }
+        },
+        {
+          "id": "st_002",
+          "name": "Geometry Box",
+          "brand": "Staedtler",
+          "price": 249,
+          "originalPrice": 349,
+          "discountPercent": 29,
+          "imageUrl": "https://images.unsplash.com/photo-1632607428849-1f0bae03f0b1?w=300&q=80",
+          "badgeLabel": "Best Seller",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "st_002", "name": "Geometry Box", "price": 249, "imageUrl": "https://images.unsplash.com/photo-1632607428849-1f0bae03f0b1?w=300&q=80" } }
+        },
+        {
+          "id": "st_003",
+          "name": "A4 Notebooks 5-pack",
+          "brand": "Classmate",
+          "price": 199,
+          "originalPrice": 250,
+          "discountPercent": 20,
+          "imageUrl": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=300&q=80",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "st_003", "name": "A4 Notebooks 5-pack", "price": 199, "imageUrl": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=300&q=80" } }
+        },
+        {
+          "id": "st_004",
+          "name": "Glitter Gel Pens 10pc",
+          "brand": "Pilot",
+          "price": 129,
+          "originalPrice": 179,
+          "discountPercent": 28,
+          "imageUrl": "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=300&q=80",
+          "inStock": true,
+          "action": { "type": "ADD_TO_CART", "payload": { "id": "st_004", "name": "Glitter Gel Pens 10pc", "price": 129, "imageUrl": "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=300&q=80" } }
+        }
+      ]
+    },
+    {
+      "id": "bts_banner_002",
+      "type": "BANNER_HERO",
+      "imageUrl": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=800&q=80",
+      "title": "School Bags Under ₹999",
+      "subtitle": "Light, durable & kids love them",
+      "ctaLabel": "Explore Bags",
+      "variant": "offer",
+      "badgeLabel": "Under ₹999",
+      "accentColor": "#FDD835",
+      "action": { "type": "DEEP_LINK", "payload": { "url": "/category/school-bags" } }
+    },
+    {
+      "id": "bts_collection_books",
+      "type": "DYNAMIC_COLLECTION",
+      "sectionTitle": "Activity Books & Workbooks",
+      "themeTag": "back_to_school",
+      "items": [
+        {
+          "id": "bk_001",
+          "title": "Maths Workbook Gr.3",
+          "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=200&q=80",
+          "subtitle": "₹179",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/maths-workbook" } }
+        },
+        {
+          "id": "bk_002",
+          "title": "English Grammar Kit",
+          "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=200&q=80",
+          "subtitle": "₹199",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/english-grammar" } }
+        },
+        {
+          "id": "bk_003",
+          "title": "Science Explorer",
+          "imageUrl": "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=200&q=80",
+          "subtitle": "₹229",
+          "action": { "type": "DEEP_LINK", "payload": { "url": "/product/science-explorer" } }
+        }
+      ]
+    }
+  ]
 }
